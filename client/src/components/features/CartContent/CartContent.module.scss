@@ -1,0 +1,33 @@
+@import '../../../styles/settings.scss';
+
+.modalTitle {
+  font-size: 24px;
+}
+
+.modalBody {
+  color: $color-seven;
+  text-align: center;
+}
+
+.proceed .button,
+.modalFooter .button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: $color-five;
+  color: $color-light;
+  border: none;
+  transition: background-color 0.9s;
+}
+
+.proceed .button:hover,
+.modalFooter .button:hover {
+  background-color: $color-seven;
+}
+
+.proceed .button {
+  font-size: 14px;
+}
+
+.modalFooter .button {
+  font-size: 16px;
+}

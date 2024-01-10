@@ -9,13 +9,16 @@ export class CartService {
   public async getUserCart(userId: string) {
     return this.prismaService.cart.findUnique({
       where: { userId },
-      include: { cartItems: true }
+      include: { cartItems: true },
     });
   }
 
-  public async addCartItem(userId: string, createCartItemDto: CreateCartItemDto) {
+  public async addCartItem(
+    userId: string,
+    createCartItemDto: CreateCartItemDto,
+  ) {
     const userCart = await this.prismaService.cart.findUnique({
-      where: { userId }
+      where: { userId },
     });
 
     if (!userCart) {
@@ -29,8 +32,8 @@ export class CartService {
         amount: createCartItemDto.amount,
         color: createCartItemDto.color,
         size: createCartItemDto.size,
-        comment: createCartItemDto.comment
-      }
+        comment: createCartItemDto.comment,
+      },
     });
   }
 
@@ -40,12 +43,15 @@ export class CartService {
     });
   }
 
-  public async updateCartItem(cartItemId: string, updateData: CreateCartItemDto) {
+  public async updateCartItem(
+    cartItemId: string,
+    updateData: CreateCartItemDto,
+  ) {
     return this.prismaService.cartItem.update({
       where: {
-        id: cartItemId
+        id: cartItemId,
       },
-      data: updateData
+      data: updateData,
     });
   }
 }

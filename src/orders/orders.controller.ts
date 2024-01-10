@@ -16,18 +16,14 @@ import { JwtAuthGuard } from 'src/auth/quards/jwt-auth.guard';
 import { AdminAuthGuard } from 'src/auth/quards/admin-auth.guard';
 import { Request } from 'express';
 
-interface AuthenticatedRequest extends Request {
-  user: any;
-}
-
 @Controller('orders')
 export class OrdersController {
   constructor(private readonly ordersService: OrdersService) {}
 
   @Get('/')
   @UseGuards(JwtAuthGuard)
-  findAll(@Req() req: AuthenticatedRequest) {
-    const userId = req.user.id;
+  findAll(@Req() req: Request) {
+    const userId = (req.user as any).id;
     return this.ordersService.findAll(userId);
   }
 

@@ -1,0 +1,23 @@
+@import '../../../styles/settings.scss';
+
+.section {
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.not-found-heading {
+  color: $color-seven;
+  padding-bottom: 20px;
+}
+
+.error-icon {
+  color: $color-seven;
+  margin-right: 10px;
+}
+
+.error-message {
+  color: $color-five;
+  font-weight: bold;
+  padding-top: 30px;
+}

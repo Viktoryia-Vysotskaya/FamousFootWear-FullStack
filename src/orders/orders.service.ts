@@ -26,13 +26,13 @@ export class OrdersService {
       });
     }
   }
-  
+
   async findOne(id: string): Promise<Order | null> {
     return this.prismaService.order.findUnique({
       where: { id },
       include: {
-        orderItems: true
-      }
+        orderItems: true,
+      },
     });
   }
 
@@ -40,17 +40,17 @@ export class OrdersService {
     const orderInput: Prisma.OrderCreateInput = {
       user: {
         connect: {
-          id: data.userId
-        }
+          id: data.userId,
+        },
       },
       date: new Date(data.date),
       priceSum: data.priceSum,
       comment: data.comment,
       clientName: data.clientName,
       email: data.email,
-      address: data.address
+      address: data.address,
     };
-    
+
     return this.prismaService.order.create({ data: orderInput });
   }
 
@@ -70,20 +70,20 @@ export class OrdersService {
     const orderItemInput: Prisma.OrderItemCreateInput = {
       order: {
         connect: {
-          id: data.orderId
-        }
+          id: data.orderId,
+        },
       },
       product: {
         connect: {
-          id: data.productId
-        }
+          id: data.productId,
+        },
       },
       amount: data.amount,
       color: data.color,
       size: data.size,
-      comment: data.comment
+      comment: data.comment,
     };
-    
+
     return this.prismaService.orderItem.create({ data: orderItemInput });
   }
 
@@ -91,8 +91,8 @@ export class OrdersService {
     let totalSum = 0;
 
     for (const item of cart.cartItems) {
-      const product = await this.prismaService.product.findUnique({ 
-        where: { id: item.productId }
+      const product = await this.prismaService.product.findUnique({
+        where: { id: item.productId },
       });
       if (product) {
         const priceAsFloat = parseFloat(product.price.toString());
@@ -105,8 +105,8 @@ export class OrdersService {
     const orderInput: Prisma.OrderCreateInput = {
       user: {
         connect: {
-          id: cart.userId
-        }
+          id: cart.userId,
+        },
       },
       date: new Date(),
       priceSum: totalSum,
@@ -116,19 +116,21 @@ export class OrdersService {
       address: cart.address,
     };
 
-    const newOrder = await this.prismaService.order.create({ data: orderInput });
+    const newOrder = await this.prismaService.order.create({
+      data: orderInput,
+    });
 
     for (const cartItem of cart.cartItems) {
       const orderItemInput: Prisma.OrderItemCreateInput = {
         order: {
           connect: {
-            id: newOrder.id
-          }
+            id: newOrder.id,
+          },
         },
         product: {
           connect: {
-            id: cartItem.productId
-          }
+            id: cartItem.productId,
+          },
         },
         amount: cartItem.amount,
         color: cartItem.color,

@@ -1,0 +1,136 @@
+@import '../../../styles/settings.scss';
+
+.cartTable {
+  .tableContainer {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow-x: auto;
+  }
+
+  .table1,
+  .table2 {
+    border-color: $color-seven;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .names1,
+  .number,
+  .image,
+  .title,
+  .amount,
+  .amountOptions,
+  .size,
+  .sizeOptions,
+  .color,
+  .colorOptions,
+  .price1,
+  .totalPrice,
+  .comment,
+  .tableButtons,
+  .amount2,
+  .price2,
+  .names2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .image {
+    min-width: 100px;
+    max-width: 120px;
+    height: 100px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      max-width: 150px;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .tbody .size {
+    width: 120px;
+  }
+
+  .sizeOptions option,
+  .colorOptions option {
+    color: $color-seven;
+  }
+
+  .colorOptions {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .tbody .amount {
+    width: 90px;
+  }
+
+  .tbody .price1,
+  .tbody .totalPrice {
+    width: 100px;
+  }
+
+  .comment textarea {
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+.modalTitle {
+  font-size: 24px;
+}
+
+.modalBody {
+  color: $color-seven;
+  text-align: center;
+}
+
+.tableButtons .button1,
+.tableButtons .button2,
+.modalFooter .button,
+.modalFooter .button1 {
+  color: $color-light;
+  border: none;
+  transition: background-color 0.9s;
+}
+
+.tableButtons .button1,
+.tableButtons .button2 {
+  font-size: 14px;
+  margin: 5px 5px;
+  width: 70%;
+}
+
+.modalFooter .button,
+.modalFooter .button1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.tableButtons .button2,
+.modalFooter .button {
+  background-color: $color-five;
+}
+
+.tableButtons .button2:hover,
+.modalFooter .button:hover {
+  background-color: $color-seven;
+}
+
+.tableButtons .button1,
+.modalFooter .button1 {
+  background-color: $color-seven;
+}
+
+.tableButtons .button1:hover,
+.modalFooter .button1:hover {
+  background-color: $color-five;
+}

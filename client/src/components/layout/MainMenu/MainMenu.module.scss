@@ -1,0 +1,40 @@
+@import '../../../styles/settings.scss';
+
+.navBar {
+  padding: 20px 20px;
+  margin-bottom: 30px;
+
+  .navBrand {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .navLink {
+    color: $color-dark;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .loggedInfo {
+    color: $color-seven;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+  }
+
+  .loggedInfo svg {
+    fill: $color-dark;
+    margin-right: 10px;
+  }
+
+  .navBrand:hover,
+  .navLink:hover,
+  .loggedInfo:hover {
+    color: $color-seven;
+  }
+}

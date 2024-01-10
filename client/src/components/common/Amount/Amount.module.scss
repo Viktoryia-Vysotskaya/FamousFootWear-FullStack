@@ -1,0 +1,42 @@
+@import '../../../styles/settings.scss';
+
+.amountCard {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+
+  .title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .amountContainer > * {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .amountContainer {
+    display: flex;
+  }
+
+  .amountContainer .button {
+    max-width: 40px;
+    background-color: $color-dark;
+    border: none;
+    box-shadow: 0 0 4px $color-seven;
+  }
+
+  .amountContainer .button:active {
+    background-color: $color-seven;
+  }
+
+  .amountContainer > input {
+    margin: 0 20px;
+  }
+}

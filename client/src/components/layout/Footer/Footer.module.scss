@@ -1,0 +1,60 @@
+@import '../../../styles/settings.scss';
+
+footer {
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+
+  .iconComponent {
+    padding-top: 40px;
+  }
+
+  .connectComponentContent {
+    color: $color-seven;
+  }
+
+  .icon {
+    span {
+      font-size: 30px;
+      color: $color-nine;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-seven;
+      }
+    }
+  }
+
+  .listComponent {
+    padding-top: 70px;
+  }
+
+  .list-block {
+    text-align: center;
+  }
+
+  .footer__link-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer__link-list__item {
+    margin-bottom: 8px;
+  }
+
+  .footer__link-list__item a {
+    text-decoration: none;
+    color: $color-nine;
+    &:hover {
+      color: $color-seven;
+    }
+  }
+
+  .disclaimer-text {
+    color: $color-two;
+    font-size: 10px;
+    margin-top: 70px;
+    margin-right: auto;
+    text-align: right;
+  }
+}

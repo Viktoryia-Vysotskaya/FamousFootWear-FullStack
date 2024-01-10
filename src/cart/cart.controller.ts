@@ -34,6 +34,12 @@ export class CartController {
     return this.cartService.addCartItem(userId, createCartItemDto);
   }
 
+  @Delete('/:cartItemId')
+  @UseGuards(JwtAuthGuard)
+  async deleteCartItem(@Param('cartItemId') cartItemId: string) {
+    return this.cartService.deleteCartItem(cartItemId);
+  }
+
   @Put('/:cartItemId')
   @UseGuards(JwtAuthGuard)
   async updateCartItem(
@@ -41,11 +47,5 @@ export class CartController {
     @Body() updateData: CreateCartItemDto,
   ) {
     return this.cartService.updateCartItem(cartItemId, updateData);
-  }
-
-  @Delete('/:cartItemId')
-  @UseGuards(JwtAuthGuard)
-  async deleteCartItem(@Param('cartItemId') cartItemId: string) {
-    return this.cartService.deleteCartItem(cartItemId);
   }
 }

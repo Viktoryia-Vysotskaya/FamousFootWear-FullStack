@@ -1,0 +1,145 @@
+@import '../../../styles/settings.scss';
+
+.productOverview {
+  margin: 30px auto;
+
+  .cardImg {
+    height: 100%;
+  }
+
+  .title,
+  .cost,
+  .amount,
+  .comTitle .comment {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .title {
+    text-shadow: 2px 2px 4px $color-seven;
+  }
+
+  .imageContainer {
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+
+  .imageContainer0:hover img {
+    transform: scale(0.9);
+  }
+
+  .rowImg2 {
+    margin: auto 10px;
+    text-align: center;
+  }
+
+  .imageContainer1,
+  .imageContainer2,
+  .imageContainer3 {
+    opacity: 0.7;
+    box-shadow: 0 0 8px $color-dark;
+    filter: blur(0.7px) brightness(1);
+  }
+
+  .imageContainer1:hover,
+  .imageContainer2:hover,
+  .imageContainer3:hover {
+    transform: scale(0.9);
+    opacity: 1;
+    filter: none;
+  }
+
+  .descriptionCol {
+    display: flex;
+    flex-direction: column;
+
+    > div:nth-child(2) {
+      height: 100%;
+
+      * {
+        height: 100%;
+      }
+    }
+  }
+
+  .dollar {
+    color: $color-seven;
+  }
+
+  .price {
+    font-weight: bold;
+    color: $color-seven;
+  }
+
+  .bodyDescription {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .comTitle {
+    text-align: center;
+    margin-bottom: 1px;
+  }
+
+  .comInfo {
+    text-align: center;
+    font-size: 12px;
+    color: $color-seven;
+  }
+
+  .comment {
+    margin-bottom: 10px;
+  }
+
+  .alert {
+    text-align: center;
+  }
+}
+
+.modalTitle {
+  font-size: 24px;
+}
+
+.modalBody {
+  color: $color-seven;
+  text-align: center;
+}
+
+.descriptionCol .button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 40px;
+  background-color: $color-five;
+  color: $color-light;
+  border: none;
+  transition: background-color 0.9s;
+}
+
+.modalFooter .button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: $color-five;
+  color: $color-light;
+  border: none;
+  transition: background-color 0.9s;
+  font-size: 16px;
+}
+
+.descriptionCol .button:hover,
+.modalFooter .button:hover {
+  background-color: $color-seven;
+}

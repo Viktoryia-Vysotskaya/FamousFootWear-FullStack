@@ -1,0 +1,35 @@
+@import '../../../styles/settings.scss';
+
+.ordersTable {
+  width: 100%;
+  overflow-x: auto;
+
+  .table {
+    border-color: $color-seven;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .table .date,
+  .table .price,
+  .table .address,
+  .table .email,
+  .table .clientName {
+    color: $color-one;
+  }
+
+  .table .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $color-five;
+    color: $color-light;
+    border: none;
+    transition: background-color 0.9s;
+    font-size: 14px;
+    width: 70%;
+  }
+
+  .table .button:hover {
+    background-color: $color-seven;
+  }
+}

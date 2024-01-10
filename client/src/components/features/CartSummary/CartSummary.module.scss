@@ -1,0 +1,122 @@
+@import '../../../styles/settings.scss';
+
+.cartTable .tableContainer1 {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cartTable .table1,
+.cartTable .table2 {
+  border-color: $color-seven;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cartTable .title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cartTable .image {
+  min-width: 100px;
+  max-width: 120px;
+  height: 100px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.cartTable .tableContainer1,
+.cartTable .tableContainer2,
+.cart .container {
+  background-color: $color-light;
+  border: 1px solid $color-dark;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.cartTable .names,
+.cartTable .number,
+.cartTable .image,
+.cartTable .productTitle,
+.cartTable .amount,
+.cartTable .size,
+.cartTable .color,
+.cartTable .price,
+.cartTable .totalPrice,
+.cartTable .comment {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cartTable .number,
+.cartTable .image,
+.cartTable .productTitle,
+.cartTable .amount,
+.cartTable .size,
+.cartTable .color,
+.cartTable .price,
+.cartTable .totalPrice,
+.cartTable .comment {
+  color: $color-one;
+}
+
+.cart .form {
+  margin-top: 40px;
+}
+
+.cart .formLabel {
+  color: $color-seven;
+  font-weight: bold;
+}
+
+.cart .button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: $color-five;
+  color: $color-light;
+  border: none;
+  transition: background-color 0.9s;
+  font-size: 14px;
+}
+
+.cart .button:hover {
+  background-color: $color-seven;
+}
+
+.modalTitle {
+  font-size: 24px;
+}
+
+.modalBody {
+  color: $color-seven;
+  text-align: center;
+}
+
+.modalFooter .button1,
+.modalFooter .button2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: $color-five;
+  color: $color-light;
+  border: none;
+  transition: background-color 0.9s;
+  font-size: 16px;
+}
+
+.modalFooter .button:hover,
+.modalFooter .button2:hover {
+  background-color: $color-seven;
+}

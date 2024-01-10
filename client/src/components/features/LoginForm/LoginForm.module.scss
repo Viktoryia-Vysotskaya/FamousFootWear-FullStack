@@ -1,0 +1,40 @@
+@import '../../../styles/settings.scss';
+
+.form {
+  margin-bottom: 30px;
+  padding: 20px 20px;
+
+  .alert {
+    text-align: center;
+  }
+
+  .title {
+    color: $color-seven;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .formLabel {
+    color: $color-dark;
+  }
+
+  .buttonSubmit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $color-five;
+    color: $color-light;
+    border: none;
+    transition: background-color 0.9s;
+
+    &:hover {
+      background-color: $color-seven;
+    }
+  }
+}
+
+.alert {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+}

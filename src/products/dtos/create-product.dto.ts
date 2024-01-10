@@ -22,11 +22,11 @@ export class CreateProductDTO {
   @IsNotEmpty()
   @IsString()
   @Length(1, 10)
-  @IsDecimal({}, { message: 'price must be a valid decimal number' })
+  @IsDecimal({}, { message: 'Price must be a valid decimal number' })
   price: string;
-  
+
   @IsNotEmpty()
   @IsString()
-  @Length(10, 500)
+  @Length(10, 5000)
   description: string;
 }

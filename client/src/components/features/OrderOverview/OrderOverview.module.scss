@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  background-color: $color-light;
+  border: 1px solid $color-dark;
+}
+
+.tableContainer .table {
+  border-color: $color-seven;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table .id,
+.table .date,
+.table .totalPrice,
+.table .comment1,
+.table .productTitle,
+.table .amount,
+.table .color,
+.table .size,
+.table .price,
+.table .comment2 {
+  color: $color-one;
+}
