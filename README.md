@@ -1,3 +1,63 @@
+👟 PROJECT "FamousFootWear.App"
+
+➱ Simple Online Shoe Store / Full Stack
+
+➱ NestJS / React
+
+💻 Live demo:
+
+(!) Free hosting so might take a while to load for first time.
+
+👀 Screenshot:
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Main.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Register.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Login.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Cart.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/CartItem.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Proceed.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Orders.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/OrderItem.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/About.png)
+
+📸 ↴︎
+
+![Alt Text](./client/public/images/screenshots/Contact.png)
+
+✉ Contact:
+
+Created by Viktoryia Vysotskaya
+
+➱ radevich.vika2014@gmail.com
+
+➱ https://www.linkedin.com/in/viktoryia-vysotskaya
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
