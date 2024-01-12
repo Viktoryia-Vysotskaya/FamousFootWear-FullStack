@@ -1,12 +1,21 @@
-👟 PROJECT "FamousFootWear.App"
-
-➱ Simple Online Shoe Store / Full Stack
-
-➱ NestJS / React
-
-💻 Live demo:
+💻 Live demo: https://famous-footwear.onrender.com
 
 (!) Free hosting so might take a while to load for first time.
+
+⬇️
+
+👟👠 PROJECT "FamousFootWear.App" 🥿🥾
+
+➱ A Full-Stack Application for a shoe store:
+✓ Register
+✓ Log in
+✓ Browse products
+✓ Manage shopping cart
+✓ Place orders
+→ All in one seamless experience!
+
+➱ NestJS / React / MySQL / Prisma
+
 
 👀 Screenshot:
 
