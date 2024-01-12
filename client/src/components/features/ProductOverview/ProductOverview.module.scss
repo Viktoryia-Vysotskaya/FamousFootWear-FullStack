@@ -143,3 +143,9 @@
 .modalFooter .button:hover {
   background-color: $color-seven;
 }
+
+@media (max-width: 768px) {
+  .cardDescription {
+    margin-top: 20px;
+  }
+}
